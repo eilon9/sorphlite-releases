@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sorph</title>
-<meta name="description" content="SorphLite: a free multi-engine sample player / granular synth. VST3 for Windows and macOS.">
+<meta name="description" content="SorphSampler: a free multi-engine sample player / granular synth. VST3 for Windows and macOS.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,8 +135,8 @@
     <div class="menu">
       <button type="button" class="menu-btn" id="products-btn" aria-expanded="false" aria-controls="products-list">Products <span class="caret">&#9662;</span></button>
       <ul class="menu-list" id="products-list" hidden>
-        <li><a href="#sorphlite">
-          <span class="name">SORPH<em>LITE</em></span>
+        <li><a href="#sorphsampler">
+          <span class="name">SORPH<em>SAMPLER</em></span>
           <span class="desc">Free multi-engine sample player / granular synth</span>
         </a></li>
       </ul>
@@ -155,12 +155,12 @@
     </div>
   </section>
 
-  <!-- SorphLite -->
-  <section class="hero" data-view="sorphlite" hidden>
+  <!-- SorphSampler -->
+  <section class="hero" data-view="sorphsampler" hidden>
     <div class="wrap">
       <img class="mark" src="mark.svg" alt="">
       <div class="rule"></div>
-      <h1><span class="p"><span class="gt">&gt;</span>_</span>SORPH<em>LITE</em></h1>
+      <h1><span class="p"><span class="gt">&gt;</span>_</span>SORPH<em>SAMPLER</em></h1>
       <p class="tagline">A free <b>multi-engine sample player / granular synth</b>.</p>
       <p class="price">Free &middot; VST3</p>
 
@@ -181,7 +181,7 @@
           <a class="btn" id="dl-mac" href="#">Download for macOS</a>
           <ol class="steps">
             <li><span>Open the <code>.dmg</code>.</span></li>
-            <li><span>Drag <code>SorphLite.vst3</code> onto the <b>VST3 Plug-Ins</b> folder and enter your password.</span></li>
+            <li><span>Drag <code>SorphSampler.vst3</code> onto the <b>VST3 Plug-Ins</b> folder and enter your password.</span></li>
             <li><span>Rescan plugins in your DAW.</span></li>
           </ol>
         </div>
@@ -201,8 +201,8 @@
   var REPO = "https://github.com/eilon9/sorphlite-releases";
   var base = REPO + "/releases/download/v" + VERSION + "/";
 
-  document.getElementById("dl-win").href = base + "SorphLite-" + VERSION + "-Windows-Setup.exe";
-  document.getElementById("dl-mac").href = base + "SorphLite-" + VERSION + "-macOS.dmg";
+  document.getElementById("dl-win").href = base + "SorphSampler-" + VERSION + "-Windows-Setup.exe";
+  document.getElementById("dl-mac").href = base + "SorphSampler-" + VERSION + "-macOS.dmg";
   document.querySelectorAll(".ver").forEach(function(el){ el.textContent = VERSION; });
 
   // ---- Products menu ----
@@ -216,11 +216,11 @@
   document.addEventListener("click", function(e){ if (!list.contains(e.target)) setOpen(false); });
   document.addEventListener("keydown", function(e){ if (e.key === "Escape"){ setOpen(false); btn.focus(); } });
 
-  // ---- Views: #sorphlite shows the product page, anything else the home page ----
+  // ---- Views: #sorphsampler shows the product page, anything else the home page ----
   function show(){
-    var view = location.hash === "#sorphlite" ? "sorphlite" : "home";
+    var view = location.hash === "#sorphsampler" ? "sorphsampler" : "home";
     document.querySelectorAll("[data-view]").forEach(function(el){ el.hidden = el.dataset.view !== view; });
-    document.title = view === "sorphlite" ? "SorphLite — Free VST3 | Sorph" : "Sorph";
+    document.title = view === "sorphsampler" ? "SorphSampler — Free VST3 | Sorph" : "Sorph";
     setOpen(false);
     window.scrollTo(0, 0);
   }

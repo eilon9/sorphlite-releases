@@ -1,22 +1,22 @@
-SorphLite - End User License Agreement
+SorphSampler - End User License Agreement
 
 Copyright (c) 2026 Sorph. All rights reserved.
 
-SorphLite is freeware. You may download, install and use it free of charge, for
+SorphSampler is freeware. You may download, install and use it free of charge, for
 personal and commercial music production. Music, audio and other material you create
-with SorphLite belongs to you.
+with SorphSampler belongs to you.
 
 You may NOT:
-  - sell, rent, lease or sublicense SorphLite;
-  - redistribute SorphLite, or bundle it with other products, without written
+  - sell, rent, lease or sublicense SorphSampler;
+  - redistribute SorphSampler, or bundle it with other products, without written
     permission from Sorph. Please link to the official download page instead;
-  - reverse engineer, decompile or disassemble SorphLite, except where the law
+  - reverse engineer, decompile or disassemble SorphSampler, except where the law
     expressly allows it;
-  - modify SorphLite or remove any copyright notices.
+  - modify SorphSampler or remove any copyright notices.
 
-SorphLite is provided "AS IS", without warranty of any kind, express or implied,
+SorphSampler is provided "AS IS", without warranty of any kind, express or implied,
 including but not limited to the warranties of merchantability, fitness for a
 particular purpose and non-infringement. In no event shall Sorph be liable for any
-claim, damages or other liability arising from the use of SorphLite.
+claim, damages or other liability arising from the use of SorphSampler.
 
 VST is a registered trademark of Steinberg Media Technologies GmbH.
